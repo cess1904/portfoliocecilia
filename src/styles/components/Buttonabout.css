@@ -1,0 +1,35 @@
+.btn-about-rea {
+  border: 2px solid #0f4c5c;
+  background: #0f4c5c;
+  color: #f7ecec;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-family: var(--font-body);
+}
+
+.btn-about-rea:hover {
+  background: #558f9e;
+  border: 2px solid #558f9e;
+  color: white;
+}
+
+.btn-about-comp {
+  border: 2px solid #b76e79;
+  background: #b76e79;
+  color: #f7ecec;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-family: var(--font-body);
+}
+
+.btn-about-comp:hover {
+  background: #c6979e;
+  border: 2px solid #c6979e;
+  color: white;
+}

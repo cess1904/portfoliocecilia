@@ -1,0 +1,44 @@
+
+.realisations {
+  background: #f6faf8;
+  padding: 50px 40px;
+}
+
+.realisations-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0f4c5c;
+}
+
+.realisations-content {
+  display: flex;
+  justify-content: center;
+}
+
+.realisations-image {
+  max-width: 90%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.realisations-card {
+  text-align: center;
+}
+
+.realisations-subtitle {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #0f4c5c;
+}
+
+.realisations-subtitle a {
+  color: inherit; /* garde la couleur du H3 */
+  text-decoration: none; /* supprime le soulignement */
+  transition: color 0.2s ease;
+}
+
+.realisations-subtitle a:hover {
+  color: #b76e79; /* un petit rose doux à l’effet hover */
+}
+
+

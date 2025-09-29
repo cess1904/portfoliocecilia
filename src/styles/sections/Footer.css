@@ -1,0 +1,63 @@
+.basdepage {
+  background: #f6faf8;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd; /* petite séparation élégante */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #0f4c5c; /* couleur élégante */
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #b76e79; /* joli effet au survol */
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* réduit l’espace global */
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px; /* un peu moins d’air en bas */
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 4px;   /* un poil plus petit */
+  height: 4px;
+  background-color: #0f4c5c; /* gris clair */
+  border-radius: 50%;
+  margin-left: 10px; /* resserre autour du texte */
+}
+
+
+
+
+

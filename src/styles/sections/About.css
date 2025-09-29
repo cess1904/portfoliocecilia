@@ -1,0 +1,169 @@
+/* ===== Réglages faciles ===== */
+:root {
+  --img-min: 320px; /* taille mini de l'image */
+  --img-vw: 40vw; /* taille fluide (part de la largeur écran) */
+  --img-max: 530px; /* taille maxi de l'image */
+  --img-shift: -24px; /* décalage gauche (valeur négative = plus à gauche) */
+}
+
+/* ===== Section About ===== */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 60px 40px;
+  background: #ddebe6;
+  flex-wrap: wrap; /* permet de passer sur 2 lignes si besoin */
+}
+
+.about-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-main-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* taille fluide */
+  margin-bottom: -0.6rem;
+}
+
+.about-parragraphe-title {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  margin-bottom: 1rem;
+  color: #545454;
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+}
+
+.about-sub-title {
+  margin-bottom: 20px;
+} /* (fix de "rem;") */
+
+.about-text {
+  font-size: clamp(1rem, 1.2vw, 1.05rem);
+  line-height: 1.7;
+  color: #333;
+  max-width: 65ch; /* plus agréable à lire que 500px */
+  margin-left: 20px;
+  text-align: justify;
+  text-justify: inter-word;/* permet davoir un espacement egal*/
+}
+
+/* ===== Colonne droite (image) ===== */
+.about-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+/* Cadre de l'image : TAILLE + DÉCALAGE */
+.image-wrapper {
+  position: relative;
+  width: clamp(var(--img-min), var(--img-vw), var(--img-max)); /* ← taille */
+  transform: translateX(var(--img-shift)); /* ← décalage */
+}
+
+/* L'image (forme organique) */
+.about-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2; /* au-dessus du bloc couleur et de la bordure */
+  border-radius: 45% 55% 70% 30% / 48% 48% 52% 52%;
+}
+
+/* Bloc couleur derrière (déco) */
+.about-color-block {
+  position: absolute;
+  bottom: -8px;
+  right: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: #0f4c5c;
+  border-radius: 45% 55% 70% 30% / 48% 48% 52% 52%;
+  z-index: 0; /* derrière */
+}
+
+/* Bordure organique autour (déco) */
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -7px -3px 0 0; /* ajuste si tu veux plus/moins d'air */
+  border-radius: 45% 55% 70% 30% / 48% 48% 52% 52%;
+  border: 8px solid #7da0a2;
+  z-index: 1; /* entre le block couleur (0) et l'image (2) */
+}
+
+/* ====== Responsive ====== */
+
+/* Tablette : on respire un peu, on réduit la taille de l'image */
+@media (max-width: 992px) {
+  :root {
+    --img-vw: 50vw; /* l'image peut occuper un peu plus de largeur */
+    --img-max: 520px;
+  }
+}
+
+/* Mobile : colonne, recentré, pas de décalage à gauche */
+@media (max-width: 768px) {
+  .about {
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .about-parragraphe-title,
+  .about-buttons,
+  .about-text {
+    margin-left: 0;
+  } /* on enlève le décalage texte */
+
+  .about-sub-title {
+    margin-left: 0;
+  }
+
+  :root {
+    --img-min: 240px;
+    --img-vw: 75vw;
+    --img-max: 420px;
+    --img-shift: 0px; /* pas de translateX à gauche sur mobile */
+  }
+
+  .about-right {
+    justify-content: center;
+  }
+
+  .about-color-block {
+    bottom: -12px;
+    right: -10px;
+    width: 92%;
+    height: 92%;
+  }
+
+  .image-wrapper::before {
+    inset: -5px; /* bordure un peu plus serrée */
+    border-width: 6px; /* bordure plus fine sur mobile */
+  }
+}
+
+/* Très grands écrans : on peut agrandir un peu + décaler */
+@media (min-width: 1400px) {
+  :root {
+    --img-vw: 38vw;
+    --img-max: 620px;
+    --img-shift: -40px;
+  }
+}

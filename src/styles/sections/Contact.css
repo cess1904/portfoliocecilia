@@ -1,0 +1,102 @@
+.contact {
+  padding: 50px 40px;
+  background: #ddebe6;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* gauche = infos | droite = formulaire */
+  gap: 3rem;
+}
+
+/* --- Partie gauche (infos) --- */
+.contact-left {
+  /*cadre*/
+  padding: 20px;
+  background: #f6faf8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  color: #0f4c5c;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  margin-bottom: 0.1rem;
+  color: #545454;
+  margin-left: 20px;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.contact-text {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  padding-left: 1.7rem;
+  margin-top: 0.3rem;
+}
+
+/* Titres de lignes (E-mail / Rejoignez-moi) */
+/* Lignes d'infos */
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  background: #ddebe6;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-line:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Titres des lignes */
+.contact-line-title {
+  color: #545454;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 100px; /* fixe une largeur pour bien aligner */
+}
+
+/* Infos */
+.contact-line .info {
+  font-weight: 500;
+  color: #0f4c5c;
+  font-size: 0.95rem;
+}
+
+/* Style général des liens (email & réseaux) */
+.contact-line .info a {
+  color: #0f4c5c;           /* couleur personnalisée */
+  text-decoration: none;    /* enlève le trait */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-line .info a:hover {
+  color: #b76e79;           /* joli effet rose poudré au survol */
+  text-decoration: none;    /* on garde sans trait même au hover */
+}
+
+
+
+/* Liens réseaux */
+.contact-socials a {
+  color: #0f4c5c;
+  text-decoration: none;
+  margin: 0 0.4rem;
+  font-weight: 500;
+}
+
+.contact-socials a:hover {
+  text-decoration: underline;
+}

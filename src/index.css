@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Cairo:wght@400;600;700&display=swap');
+
+:root {
+  --font-title: 'Cairo', sans-serif;
+  --font-body: 'Arimo', sans-serif;
+  --color-title: #0f4c5c;
+  --color-text: #545454;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  
+}
+
+/* Tous les titres */
+h1
+ {
+  font-family: var(--font-title);
+  color: var(--color-title);
+
+}
+/* Tous les titres */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  color: var(--color-title);
+
+  margin-left: 20px;
+  font-size: 2rem;
+
+  
+}
+
+h2 {
+  position: relative;
+  font-size: 2rem;
+  color: #0f4c5c;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 60px;
+  height: 3px;
+  background: #b76e79; /* ton rose poudré */
+  border-radius: 2px;
+}
+
