@@ -6,7 +6,12 @@
   --color-title: #0f4c5c;
   --color-text: #545454;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+.about-buttons a {
+  text-decoration: none; /* enlève le soulignement */
+}
 body {
   margin: 0;
   padding: 0;

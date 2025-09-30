@@ -5,6 +5,16 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 import { MdOutlineSearch } from 'react-icons/md' // pour SEO (loupe)
 import { FiPenTool } from 'react-icons/fi' // pour UX/UI (icône design)
 import { FaPalette } from "react-icons/fa";
+import {  MdSpeed, MdAnalytics } from "react-icons/md";
+import { FaUniversalAccess } from "react-icons/fa";
+{/* import { SiNextdotjs } from "react-icons/si";  ✅ logo officiel Next.js
+import { SiNextdotjs, SiGatsby } from "react-icons/si";*/ } 
+
+
+
+
+
+
 
 function Competences() {
   return (
@@ -23,11 +33,26 @@ function Competences() {
         <li className="competence-item"><SiVite /> Vite</li>
         <li className="competence-item"><BiLogoVisualStudio /> VS Code</li>
         <li className="competence-item"><FaGithub /> GitHub</li>
-        <li className="competence-item"><MdOutlineSearch /> SEO</li>
       </ul>
     </div>
+        {/* Bloc SEO & optimisation */}
+    <div className="competences-block">
+      <h3 className="competences-subtitle">SEO & optimisation</h3>
+      <ul className="competences-list">
+        <li className="competence-item"><MdOutlineSearch /> SEO</li>
+        <li className="competence-item"><MdSpeed /> Performance</li>
+       <li className="competence-item"><FaUniversalAccess/> Accessibilité</li>
+       <li className="competence-item"><MdAnalytics /> Analytics</li>
+      
 
-    {/* Bloc Création & design */}
+       {/*pour la suite 
+       <li className="competence-item"><SiNextdotjs /> Next.js</li>
+        <li className="competence-item"><SiGatsby /> Gatsby</li>
+       */}
+       
+      </ul>
+    </div>
+      {/* Bloc Création & design */}
     <div className="competences-block">
       <h3 className="competences-subtitle">Création & design</h3>
       <ul className="competences-list">

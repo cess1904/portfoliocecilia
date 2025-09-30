@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap; /* 🔒 reste sur une seule ligne */
   gap: clamp(8px, 2vw, 24px);
   max-width: 1200px;
   margin: 0 auto;
@@ -21,12 +20,12 @@
   display: flex;
   align-items: center;
   gap: clamp(8px, 1.4vw, 16px);
-  flex: 1 1 auto; /* prend la place dispo */
-  min-width: 0; /* évite les casses */
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .hero-logo {
-  width: clamp(40px, 7vw, 64px); /* ajuste si ça ne tient pas */
+  width: clamp(40px, 7vw, 64px);
   height: auto;
   flex: 0 0 auto;
 }
@@ -35,46 +34,41 @@
   color: #545454;
   margin: 0;
   line-height: 1.2;
-  font-size: clamp(0.9rem, 2.2vw, 1.2rem); /* ↓ rétrécit si besoin */
-  white-space: nowrap; /* ne va pas à la ligne */
+  font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+  white-space: nowrap;
 }
 
-/* Droite : bouton */
+/* Droite : icônes sociales */
 .hero-right {
-  flex: 0 0 auto; /* taille du contenu seulement */
-  margin-left: auto; /* pousse à droite */
+  display: flex;
+  align-items: center;
 }
 
-/* Si ton Buttoncontact.jsx rend un <button>, ajoute cette classe dans son CSS */
-.btn-contact {
-  border: 2px solid #0f4c5c;
-  background: transparent;
-  color: #f7ecec;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: 0.25s;
-  white-space: nowrap; /* reste sur une ligne */
-}
-.btn-contact:hover {
-  background: #0f4c5c;
-  color: #fff;
+.hero-socials {
+  display: flex;
+  gap: 1rem;
 }
 
-/* ——— Option : micro-ajustements si ça force encore à passer à la ligne ——— */
+.hero-socials a {
+  font-size: 1.4rem;
+  color: #0f4c5c;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-socials a:hover {
+  color: #b76e79;
+  transform: scale(1.2);
+}
+
+/* ——— Responsive ——— */
 @media (max-width: 480px) {
   .hero {
     margin-block-end: -30px;
   }
   .hero-logo {
-    width: 42px;
+    width: 38px;
   }
   .hero-title {
-    font-size: 0.9rem;
-  }
-  .btn-contact {
-    padding: 8px 12px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }

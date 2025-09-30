@@ -8,12 +8,11 @@
   font-size: 2rem;
   color: #0f4c5c;
   margin: 0 0 1.5rem 0; /* supprime le gros espace au-dessus */
- 
 }
 
 .competences-content {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 
@@ -58,9 +57,30 @@
   font-size: 1.2rem;
 }
 
-/* Responsive : 2 colonnes dès tablette */
-@media (min-width: 768px) {
+
+
+
+
+
+/* Tablette : 2 colonnes */
+@media (min-width: 768px) and (max-width: 1023px) {
   .competences-content {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /* cibler le 3ème bloc */
+  .competences-block:nth-child(3) {
+    grid-column: 1 / span 2; /* il prend toute la largeur */
+    justify-self: center; /* on le centre */
+    max-width: 400px; /* pour qu’il ne s’étale pas trop */
+  }
+}
+
+/* Desktop : 3 colonnes */
+@media (min-width: 1024px) {
+  .competences-content {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

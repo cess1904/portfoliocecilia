@@ -5,6 +5,7 @@ import Services from './sections/Services'
 import Realisations from './sections/Realisations'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import Skills from './sections/Skills'
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Realisations />
       <Contact /> 
       <Footer />  
+      <Skills />
       
     </>
   )

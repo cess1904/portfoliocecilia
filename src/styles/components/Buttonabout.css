@@ -16,7 +16,7 @@
   color: white;
 }
 
-.btn-about-comp {
+.btn-about-contact {
   border: 2px solid #b76e79;
   background: #b76e79;
   color: #f7ecec;
@@ -28,7 +28,7 @@
   font-family: var(--font-body);
 }
 
-.btn-about-comp:hover {
+.btn-about-contact:hover {
   background: #c6979e;
   border: 2px solid #c6979e;
   color: white;

@@ -14,8 +14,8 @@ function About() {
         </p>
 
         <div className="about-buttons">
-          <button className="btn-about-rea">Réalisation</button>
-          <button className="btn-about-comp">Compétances</button>
+         <a href="#realisations" className="btn-about-rea">Réalisations</a>
+        <a href="#contact" className="btn-about-contact">Contact</a>
         </div>
 
         <h2 className="about-sub-title">À propos de Cécilia</h2>

@@ -1,102 +1,99 @@
 .contact {
-  padding: 50px 40px;
-  background: #ddebe6;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* gauche = infos | droite = formulaire */
-  gap: 3rem;
+  padding: 60px 20px;
+background: #ddebe6;
+ 
 }
 
-/* --- Partie gauche (infos) --- */
-.contact-left {
-  /*cadre*/
-  padding: 20px;
-  background: #f6faf8;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Titres & texte */
 .contact-title {
   color: #0f4c5c;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .contact-subtitle {
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  margin-bottom: 0.1rem;
-  color: #545454;
-  margin-left: 20px;
-  margin-top: 1.5rem;
+  color: #b76e79;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding-left: 0.5rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
 }
 
 .contact-text {
   color: #444;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
   margin-bottom: 2rem;
-  padding-left: 1.7rem;
-  margin-top: 0.3rem;
+  font-style: italic;
+  text-align: center;
 }
 
-/* Titres de lignes (E-mail / Rejoignez-moi) */
-/* Lignes d'infos */
-.contact-line {
+/* Formulaire centré */
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-  padding: 0.8rem 1rem;
-  background: #ddebe6;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  animation: fadeIn 0.8s ease;
 }
 
-.contact-line:hover {
-  transform: translateX(5px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-/* Titres des lignes */
-.contact-line-title {
-  color: #545454;
-  font-size: 0.95rem;
+/* Labels */
+.contact-form label {
   font-weight: 600;
-  white-space: nowrap;
-  min-width: 100px; /* fixe une largeur pour bien aligner */
+  color: #0f4c5c;
+  margin-bottom: 0.3rem;
+  display: block;
 }
 
-/* Infos */
-.contact-line .info {
-  font-weight: 500;
-  color: #0f4c5c;
+/* Champs */
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 2px solid #ddebe6;
+  border-radius: 10px;
   font-size: 0.95rem;
+  transition: all 0.3s ease;
 }
 
-/* Style général des liens (email & réseaux) */
-.contact-line .info a {
-  color: #0f4c5c;           /* couleur personnalisée */
-  text-decoration: none;    /* enlève le trait */
-  font-weight: 500;
-  transition: color 0.2s ease;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b76e79;
+  background: #fdf7f7;
+  outline: none;
+  transform: scale(1.02);
 }
 
-.contact-line .info a:hover {
-  color: #b76e79;           /* joli effet rose poudré au survol */
-  text-decoration: none;    /* on garde sans trait même au hover */
+/* Bouton */
+.contact-form button {
+  background:#0f4c5c; 
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background:#b76e79 ;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
 
-/* Liens réseaux */
-.contact-socials a {
-  color: #0f4c5c;
-  text-decoration: none;
-  margin: 0 0.4rem;
-  font-weight: 500;
-}
-
-.contact-socials a:hover {
-  text-decoration: underline;
-}
