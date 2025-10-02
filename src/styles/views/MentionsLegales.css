@@ -39,7 +39,7 @@
   height: 4px;
   margin-top: 8px; /* espace entre titre et trait */
   border-radius: 2px;
-  background: #b76e79;
+  background: #AB5E69;
 }
 
 
@@ -81,7 +81,7 @@
 }
 
 .mentions-legales a:hover {
-  color: #b76e79;
+  color: #AB5E69;
   border-bottom-color: #0f4c5c;
 }
 

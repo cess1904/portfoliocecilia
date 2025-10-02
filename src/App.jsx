@@ -8,7 +8,6 @@ import Realisations from './sections/Realisations'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
-
 // Views
 import MentionsLegales from './views/MentionsLegales'
 import CGU from './views/CGU'
@@ -16,8 +15,11 @@ import Confidentialite from './views/Confidentialite'
 import FAQ from './views/FAQ'
 
 function App() {
+  // 👉 Détecte si on est en dev ou en prod (GitHub Pages)
+  const basename = import.meta.env.MODE === "development" ? "/" : "/portfoliocecilia"
+
   return (
-    <Router basename="/portfoliocecilia">
+    <Router basename={basename}>
       <Routes>
         {/* === Page principale === */}
         <Route
@@ -40,7 +42,6 @@ function App() {
         <Route path="/confidentialite" element={<Confidentialite />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact showRetour={true} />} />
-
       </Routes>
 
       {/* 👇 Le footer s’affichera partout */}
