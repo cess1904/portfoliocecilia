@@ -97,6 +97,28 @@
 }
 
 /* Réponse */
+/* Lien inline propre dans la FAQ */
+.faq .link-inline,
+.faq .link-inline:link,
+.faq .link-inline:visited {
+  color: #0f4c5c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.faq .link-inline:hover {
+  color: #b76e79;
+  text-decoration: none;            /* pas de souligné moche */
+  border-bottom: 2px solid #b76e79; /* petit effet propre au survol */
+  padding-bottom: 1px;              /* alignement du souligné custom */
+}
+
+.faq .link-inline:active {
+  color: #0f4c5c;
+  border-bottom-color: #0f4c5c;
+}
+
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;

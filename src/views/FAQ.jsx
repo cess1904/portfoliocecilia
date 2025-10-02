@@ -56,7 +56,7 @@ function Faq() {
   answer: (
     <>
       Si vous avez encore des doutes ou besoin d’éclaircissements, n’hésitez pas à me contacter directement via le{" "}
-       <Link to="/contact">formulaire de contact</Link>.    
+       <Link to="/contact" className="link-inline">formulaire de contact</Link>.   
       Je serai ravie d’échanger avec vous et de répondre à vos questions de manière personnalisée.
     </>
   )
