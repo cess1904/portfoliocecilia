@@ -1,0 +1,114 @@
+.mentions-legales {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  line-height: 1.8;
+  color: #333;
+  background: linear-gradient(135deg, #f6faf8 0%, #ffffff 100%);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Effet apparition douce */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Titre principal */
+.mentions-legales h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #0f4c5c;
+  font-weight: 700;
+  position: relative;
+  text-align: left; /* le titre reste à gauche */
+}
+
+.mentions-legales h1::after {
+  content: "";
+  display: block;
+  width: 100px; /* longueur du trait */
+  height: 4px;
+  margin-top: 8px; /* espace entre titre et trait */
+  border-radius: 2px;
+  background: #b76e79;
+}
+
+
+
+/* Sous-titres */
+.mentions-legales h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0f4c5c;
+  font-weight: 600;
+}
+.mentions-legales h2::after {
+  display: none; /* supprime le trait */
+}
+
+/* Paragraphes encadrés */
+.mentions-legales p {
+  margin-bottom: 1.5rem;
+  background: #fff;
+  padding: 1.4rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mentions-legales p:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Lien dans le texte */
+.mentions-legales a {
+  color: #0f4c5c;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.mentions-legales a:hover {
+  color: #b76e79;
+  border-bottom-color: #0f4c5c;
+}
+
+/* Bouton retour */
+.retour-accueil {
+  margin-top: 3rem;
+  text-align: center;
+  background: none; /* ✅ supprime le fond blanc */
+  box-shadow: none; /* ✅ supprime l’ombre */
+  padding: 0;
+}
+
+.retour-accueil a {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border: 2px solid #0f4c5c;
+  border-radius: 30px;
+  color: #0f4c5c;
+  font-weight: 600;
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.retour-accueil a:hover {
+  background: #0f4c5c;
+  color: #fff;
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+

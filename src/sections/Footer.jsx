@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom"
 import '../styles/sections/Footer.css'
 
 function Footer() {
   return (
     <footer className="basdepage">
       <ul className="footer-links">
-        <li><a href="/mentions-legales">Mentions légales </a></li>
-        <li><a href="/cgu">CGU </a></li>
-        <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
-        <li><a href="/faq">FAQ</a></li>
+        <li><Link to="/mentions-legales">Mentions légales</Link></li>
+        <li><Link to="/cgu">CGU</Link></li>
+        <li><Link to="/confidentialite">Politique de confidentialité</Link></li>
+        <li><Link to="/faq">FAQ</Link></li>
       </ul>
       <p className="footer-copy">
         © {new Date().getFullYear()} Cécilia - Tous droits réservés.

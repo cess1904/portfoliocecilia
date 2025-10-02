@@ -95,5 +95,8 @@ background: #ddebe6;
   to { opacity: 1; transform: translateY(0); }
 }
 
+.home .contact-retour {
+  display: none !important;
+}
 
 

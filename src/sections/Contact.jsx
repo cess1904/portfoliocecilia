@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom"
 import '../styles/sections/Contact.css'
 
-function Contact() {
+function Contact({ showRetour = false }) {
   return (
-    <section className="contact" id='contact'>
+    <section className="contact" id="contact">
       <h2 className="contact-title">Contactez-moi</h2>
       <h3 className="contact-subtitle">Un projet en tête ?</h3>
       <p className="contact-text">
@@ -32,13 +33,26 @@ function Contact() {
         <textarea
           id="message"
           name="message"
-          placeholder= "Votre message passera du côté obscur ici 👇"
+          placeholder="Votre message passera du côté obscur ici 👇"
           rows="5"
           required
         ></textarea>
 
         <button type="submit">Envoyer</button>
       </form>
+
+      {/* Bouton retour visible uniquement si showRetour est true */}
+     {showRetour && (
+  <div className="retour-accueil contact-retour">
+    <Link
+      to="/"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    >
+      Retour à l’accueil
+    </Link>
+  </div>
+)}
+
     </section>
   )
 }
