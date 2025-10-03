@@ -4,9 +4,6 @@
 }
 
 .competences-title {
-  text-align: left; /* aligne ton titre à gauche */
-  font-size: 2rem;
-  color: #0f4c5c;
   margin: 0 0 1.5rem 0; /* supprime le gros espace au-dessus */
 }
 
@@ -19,7 +16,7 @@
 .competences-subtitle {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color:#AB5E69; /* ton rose poudré */
+  color: #ab5e69; /* ton rose poudré */
   font-weight: bold;
   text-align: center;
 }
@@ -57,11 +54,6 @@
   font-size: 1.2rem;
 }
 
-
-
-
-
-
 /* Tablette : 2 colonnes */
 @media (min-width: 768px) and (max-width: 1023px) {
   .competences-content {
@@ -84,3 +76,12 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .competence-item {
+    gap: 0.3rem;
+    padding: 0.4rem 0.8rem;
+  }
+    
+}
+

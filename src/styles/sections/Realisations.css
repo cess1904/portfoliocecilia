@@ -5,9 +5,9 @@
 }
 
 .realisations-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #0f4c5c;
+ 
+ margin: 0 0 1.5rem 0; /* supprime le gros espace au-dessus */
+  
 }
 
 .realisations-content {

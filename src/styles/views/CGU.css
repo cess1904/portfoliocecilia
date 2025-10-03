@@ -24,22 +24,19 @@
 
 /* Titre principal */
 .cgu h1 {
-  font-size: 2.4rem;
+ 
   margin-bottom: 2rem;
-  color: #0f4c5c;
-  font-weight: 700;
-  position: relative;
-  text-align: left;
+ 
 }
 
 .cgu h1::after {
-  content: "";
+   content: '';
   display: block;
-  width: 100px;
-  height: 4px;
-  margin-top: 8px;
+  width: 60px; /* longueur du trait */
+  height: 3px;
+  margin-top: 8px; /* espace entre titre et trait */
   border-radius: 2px;
-  background: #AB5E69;
+  background: #ab5e69;
 }
 
 /* Sous-titres */

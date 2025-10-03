@@ -1,20 +1,15 @@
 .contact {
   padding: 60px 20px;
-background: #ddebe6;
- 
+  background: #ddebe6;
 }
 
 /* Titres & texte */
 .contact-title {
-  color: #0f4c5c;
-  font-size: 2rem;
   margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .contact-subtitle {
-  color: #AB5E69;
+  color: #ab5e69;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
@@ -64,7 +59,7 @@ background: #ddebe6;
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #AB5E69;
+  border-color: #ab5e69;
   background: #fdf7f7;
   outline: none;
   transform: scale(1.02);
@@ -72,7 +67,7 @@ background: #ddebe6;
 
 /* Bouton */
 .contact-form button {
-  background:#0f4c5c; 
+  background: #0f4c5c;
   color: #fff;
   border: none;
   padding: 14px;
@@ -84,19 +79,23 @@ background: #ddebe6;
 }
 
 .contact-form button:hover {
-  background:#AB5E69 ;
+  background: #ab5e69;
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Animation apparition */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .home .contact-retour {
   display: none !important;
 }
-
-

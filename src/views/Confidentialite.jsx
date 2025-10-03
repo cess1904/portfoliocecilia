@@ -5,7 +5,7 @@ import "../styles/views/Confidentialite.css"
 function Confidentialite() {
   return (
    <section className="confidentialite">
-  <h1>Politique de confidentialité</h1>
+  <h1>Confidentialité</h1>
 
   <h2>Introduction</h2>
   <p>

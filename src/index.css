@@ -62,3 +62,13 @@ h2::after {
   border-radius: 2px;
 }
 
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}

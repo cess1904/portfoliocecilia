@@ -7,7 +7,7 @@ function Footer() {
       <ul className="footer-links">
         <li><Link to="/mentions-legales">Mentions légales</Link></li>
         <li><Link to="/cgu">CGU</Link></li>
-        <li><Link to="/confidentialite">Politique de confidentialité</Link></li>
+        <li><Link to="/confidentialite">Confidentialité</Link></li>
         <li><Link to="/faq">FAQ</Link></li>
       </ul>
       <p className="footer-copy">
